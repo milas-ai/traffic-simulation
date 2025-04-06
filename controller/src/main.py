@@ -66,13 +66,13 @@ class Controller:
         })
 
     def loadFeatures(self):
-        if not os.path.exists("/app/features.csv"):
-            with open("/app/features.csv", "w") as output_file:
+        if not os.path.exists("/home/features.csv"):
+            with open("/home/features.csv", "w") as output_file:
                 output_file.write("feature,default_value,output_name,locked\n")
                 for default_key, value in DEFAULT_FEATURES.items():
                     output_file.write(f"{default_key},{value},{default_key},False\n")
 
-        with open("/app/features.csv", "r") as output_file:
+        with open("/home/features.csv", "r") as output_file:
             for line in output_file.readlines()[1:]:
                 key, value, name, locked = line.strip().split(",")
                 if key in ["stime","ltime","dur","mean","stddev","sum","min","max","rate","srate","drate"]:
@@ -105,7 +105,7 @@ class Controller:
             else:
                 feature["locked"] = False
 
-        with open("/app/features.csv", "w") as output_file:
+        with open("/home/features.csv", "w") as output_file:
             output_file.write("feature,default_value,output_name,locked\n")
             for key, feature in self.packet_features.items():
                 output_file.write(f"{key},{feature['default_value']},{feature['name']},{feature['locked']}\n")
