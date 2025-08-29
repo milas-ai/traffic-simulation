@@ -1,7 +1,7 @@
 # Simulador de Tráfego de Rede
-Ferramenta auxiliar de simulação de tráfego de rede , resultado do projeto **STARLING: Segurança e Alocação de Recursos em B5G via Técnicas de Inteligência Artificial**, financiado pela FAPESP (proc.  21/06995-0).
+Ferramenta auxiliar de simulação de tráfego de rede , resultado do projeto [**STARLING: Segurança e Alocação de Recursos em B5G via Técnicas de Inteligência Artificial**](https://bv.fapesp.br/pt/auxilios/113042/starling-seguranca-e-alocacao-de-recursos-em-b5g-via-tecnicas-de-inteligencia-artificial/), financiado pela FAPESP (proc.  21/06995-0).
 
-O desenvolvimento foi realizado também com financiamento do processo FAPESP [Análise de desempenho de técnicas de aprendizado de máquina na classificação online de tráfego malicioso](https://bv.fapesp.br/pt/bolsas/213080/analise-de-desempenho-de-tecnicas-de-aprendizado-de-maquina-na-classificacao-online-de-trafego-malic/) (proc. 23/13638-5).
+O desenvolvimento foi realizado também com financiamento do processo FAPESP [**Análise de desempenho de técnicas de aprendizado de máquina na classificação online de tráfego malicioso**](https://bv.fapesp.br/pt/bolsas/213080/analise-de-desempenho-de-tecnicas-de-aprendizado-de-maquina-na-classificacao-online-de-trafego-malic/) (proc. 23/13638-5).
 
 O sistema proposto é voltado para a geração de tráfego benigno e de ataque entre várias máquinas em uma rede. Esse tráfego será capturado e posteriormente convertido para um arquivo CSV a ser usado como entrada para IDSs. Uma das máquinas da rede, chamada de **Controlador** envia instruções para outras máquinas na rede realizarem troca de tráfego entre si. Cada uma dessas outras máquinas é chamada de **Operário**.
 
